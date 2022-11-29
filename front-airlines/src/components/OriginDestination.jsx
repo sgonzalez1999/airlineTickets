@@ -2,19 +2,20 @@ import React from 'react'
 import Select from 'react-select'
 
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'madrid', label: 'Madrid' },
+    { value: 'berlin', label: 'Berlin' },
+    { value: 'london', label: 'London' }
   ]
 
 const OriginDestination = () => {
     return (
-      <div>
-        <div id="" className="w-50 p-3">
-          <Select id="" options={options} />
+      <div className='row'>
+        <div id="" className="col p-3 ms-5">
+          <Select id="" options={options} placeholder="Origin"/>
         </div>
-        <div id="" className="w-50 p-3">
-          <Select id="" options={options} />
+        <div className='col col-sm-1 pt-4'><p>a</p></div>
+        <div id="" className="col p-3 me-5">
+          <Select id="" options={options} placeholder="Destination" />
         </div>
       </div>
     );

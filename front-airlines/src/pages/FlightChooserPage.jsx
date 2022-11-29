@@ -2,7 +2,7 @@ import React from 'react';
 import CalendarComponent from '../components/CalendarComponent';
 import Flight from '../components/Flight';
 import Logo from '../components/Logo';
-import OriginDestination from '../components/originDestination';
+import OriginDestination from '../components/OriginDestination';
 
 const FlightChooserPage = () => {
     return (
