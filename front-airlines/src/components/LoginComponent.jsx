@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-const LoginComponent = (props) => {
+const LoginComponent = () => {
     // function loginHandler() {
     //     console.log("buton");
     //     console.log(this.state.users);
@@ -14,9 +14,6 @@ const LoginComponent = (props) => {
                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
             </div>
             <a className='btn btn-primary' href='/peme'>
-                {/* <button type="submit" className="btn btn-primary ">
-                    Submit
-                </button> */}
                 Sing in
             </a>
         </form>
