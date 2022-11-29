@@ -13,10 +13,11 @@ const LoginComponent = (props) => {
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <a href='../../pages/FlightChooserPage'>
-                <button type="submit" className="btn btn-primary ">
+            <a className='btn btn-primary' href='/peme'>
+                {/* <button type="submit" className="btn btn-primary ">
                     Submit
-                </button>
+                </button> */}
+                Sing in
             </a>
         </form>
         );
