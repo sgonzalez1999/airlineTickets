@@ -1,5 +1,6 @@
 import React from 'react';
 import CalendarComponent from '../components/CalendarComponent';
+import Flight from '../components/Flight';
 import Logo from '../components/Logo';
 
 const FlightChooserPage = () => {
@@ -7,6 +8,7 @@ const FlightChooserPage = () => {
         <div>
             <Logo/>
             <CalendarComponent/>
+            <Flight/>
         </div>
     );
 }
