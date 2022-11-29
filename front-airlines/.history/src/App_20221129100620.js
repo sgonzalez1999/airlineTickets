@@ -1,6 +1,5 @@
 import './App.css';
 import Logo from './components/Logo';
-import OriginDestination from './components/OriginDestination'
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         </a>
       </header> */}
       <Logo/>
-      <OriginDestination/>
     </div>
   );
 }
