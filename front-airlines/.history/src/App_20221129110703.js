@@ -1,4 +1,6 @@
 import './App.css';
+import Logo from './components/Logo';
+import OriginDestination from './components/OriginDestination'
 import FlightChooserPage from './pages/FlightChooserPage';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <Logo/>
+      <OriginDestination/>
       <FlightChooserPage/>
     </div>
   );
