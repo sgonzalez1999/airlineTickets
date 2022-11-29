@@ -1,5 +1,5 @@
 import './App.css';
-import Logo from './components/Logo';
+import FlightChooserPage from './pages/FlightChooserPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Logo/>
+      <FlightChooserPage/>
     </div>
   );
 }
