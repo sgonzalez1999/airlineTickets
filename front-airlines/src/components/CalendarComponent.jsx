@@ -6,9 +6,7 @@ import 'react-calendar/dist/Calendar.css';
 
 const CalendarComponent = () => {
     return (
-        <div>
             <Calendar/>
-        </div>
     );
 }
 

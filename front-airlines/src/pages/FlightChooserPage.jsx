@@ -8,9 +8,27 @@ import PeopleInformationForm from '../components/PeopleInformation';
 
 const FlightChooserPage = () => {
     return (
-        <div>
+        <div className='ms-5'>
             <Logo/>
-            <PeopleInformationForm/>
+            <div className='row'>
+                <Filters className='col-1'/>
+                <div className='col-6'>
+                    <OriginDestination />
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                </div>
+                <div className='col'>
+                    <CalendarComponent/>
+                </div>
+            </div>
         </div>
     );
 }

@@ -6,7 +6,6 @@ const LoginPage = () => {
         <div className=" d-flex justify-content-center" >
             <LoginComponent/>
         </div>
-        
     );
 }
 
