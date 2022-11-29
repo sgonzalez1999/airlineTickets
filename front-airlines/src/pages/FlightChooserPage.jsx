@@ -4,12 +4,31 @@ import Flight from '../components/Flight';
 import Logo from '../components/Logo';
 import OriginDestination from '../components/OriginDestination';
 import Filters from '../components/Filters';
+import FlightChooserPageStyle from '../css/FlightChooserPageStyle.css';
 
 const FlightChooserPage = () => {
     return (
-        <div>
+        <div className='ms-5'>
             <Logo/>
-            <Filters/>
+            <div className='row'>
+                <Filters className='col-1'/>
+                <div className='col-6'>
+                    <OriginDestination />
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                    <Flight/>
+                </div>
+                <div className='col'>
+                    <CalendarComponent/>
+                </div>
+            </div>
         </div>
     );
 }

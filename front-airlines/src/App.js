@@ -10,7 +10,7 @@ function App() {
 
   <Routes>
     <Route path='/' element={<LoginPage/>}></Route>
-    <Route path='/peme' element={<FlightChooserPage/>}></Route>
+    <Route path='/FlightChooserPage' element={<FlightChooserPage/>}></Route>
   </Routes>
   );
 }
