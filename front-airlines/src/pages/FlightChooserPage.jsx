@@ -4,12 +4,13 @@ import Flight from '../components/Flight';
 import Logo from '../components/Logo';
 import OriginDestination from '../components/OriginDestination';
 import Filters from '../components/Filters';
+import PeopleInformationForm from '../components/PeopleInformation';
 
 const FlightChooserPage = () => {
     return (
         <div>
             <Logo/>
-            <Filters/>
+            <PeopleInformationForm/>
         </div>
     );
 }
