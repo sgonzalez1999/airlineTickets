@@ -1,5 +1,7 @@
+
 import './App.css';
-import FlightChooserPage from './pages/FlightChooserPage';
+import LoginPage from './pages/LoginPage';
+
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
-      <FlightChooserPage/>
+  </header> */}
+      <LoginPage/>
     </div>
   );
 }
