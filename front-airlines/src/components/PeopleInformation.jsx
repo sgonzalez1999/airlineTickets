@@ -1,25 +1,12 @@
-import React from 'react'
-import ToggleSwitch from "././tools/ToggleSwitch";
-import Select from 'react-select'
+
+import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 
 
-const options = [
-    { value: 'iberia', label: 'Iberia' },
-    { value: 'rayanair', label: 'Rayanair' },
-    { value: 'qatar', label: 'Qatar' }
-  ]
-
 const PeopleInformationForm = (props) => {
-  return (
-    /**
-     * • Name and surname
-     * • Nationality
-     * • Identification (NIF or passport)
-     * • Age (list with possible values < 2 years, between 2 and 9 years, > 9 years). The default
-        value will be > 9 years
-     */
 
+
+  return (
     <div className="me-5">
       <Form>
         <Form.Group className="m-3 me-5" controlId="formBasicName">
@@ -57,12 +44,12 @@ const PeopleInformationForm = (props) => {
             type="radio"
             id={`>9`}
             name="group1"
-            defaultChecked
             label={`Mayor de 9 años`}
           />
         </Form.Group>
         
       </Form>
+
     </div>
   );
 };
