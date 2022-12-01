@@ -32,11 +32,12 @@ public class FlightController {
 	@GetMapping()
 	public ResponseEntity<String> fetchAllFlights(@RequestParam Map<String, String> s) throws Exception{
 		//List<Flight> listOfTransactions = service.getAllFlights();
+		System.out.println("-------------------------------------------------");
 		for (Map.Entry<String, String> entry : s.entrySet()) {
 			System.out.println(entry.getValue());
 			
 		}
-		
+		System.out.println("-------------------------------------------------");
 		
 		//List<Flight> filteredFlightList = service.getFilteredFlights(flight);
 		return new ResponseEntity<>("", HttpStatus.OK);

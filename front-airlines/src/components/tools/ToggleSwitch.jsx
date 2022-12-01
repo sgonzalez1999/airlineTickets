@@ -4,9 +4,9 @@ import "./ToggleSwitch.css";
   
 const ToggleSwitch = ({ label }) => {
   return (
-    <div className="container">
+    <div className="container" onClick={() =>console.log("aaa")}>
       {label}{" "}
-      <div className="toggle-switch">
+      <div className="toggle-switch" >
         <input type="checkbox" className="checkbox" 
                name={label} id={label} />
         <label className="label" htmlFor={label}>

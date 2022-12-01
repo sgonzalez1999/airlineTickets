@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import ToggleSwitch from "././tools/ToggleSwitch";
 import Select from 'react-select'
+import Form from 'react-bootstrap/Form';
+import PeopleInformationForm from './PeopleInformation';
 
 const options = [
     { value: 'iberia', label: 'Iberia' },
@@ -8,7 +10,10 @@ const options = [
     { value: 'qatar', label: 'Qatar' }
   ]
 
-const OriginDestination = () => {
+
+  
+
+    const OriginDestination = ({escalas, equipaje, select}) => {
 
     return (
       <div className=" w-25 ms-3 p-4 ">
@@ -17,7 +22,12 @@ const OriginDestination = () => {
             <p>Escalas</p>
           </div>
           <div className="col">
-            <ToggleSwitch id="scale" label={"  "} />
+            <Form.Check
+              type="switch"
+              id={`<2`}
+              name="group1"
+              onClick={(e) => escalas()}
+            />
           </div>
         </div>
 
@@ -26,7 +36,12 @@ const OriginDestination = () => {
             <p>Equipaje</p>
           </div>
           <div className="col">
-            <ToggleSwitch id="luggage" label={" "} />
+            <Form.Check
+              type="switch"
+              id={`<2`}
+              name="group1"
+              onClick={(e) => equipaje()}
+            />
           </div>
         </div>
 
@@ -35,8 +50,14 @@ const OriginDestination = () => {
             <p>Aerolinea</p>
           </div>
           <div className="col">
-            <Select id="airline" options={options} placeholder="Airline" />
+            <Select
+              id="airline"
+              options={options}
+              placeholder="Airline"
+              onChange={(e) => select(e.value)}
+            />
           </div>
+          <h1>{select}</h1>
         </div>
       </div>
     );

@@ -9,8 +9,8 @@ function App() {
   return (
 
   <Routes>
-    <Route path='/' element={<LoginPage/>}></Route>
-    <Route path='/FlightChooserPage' element={<FlightChooserPage/>}></Route>
+    {/* <Route path='/' element={<LoginPage/>}></Route> */}
+    <Route path='/' element={<FlightChooserPage/>}></Route>
   </Routes>
   );
 }

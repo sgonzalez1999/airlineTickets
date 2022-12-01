@@ -2,10 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 const LoginComponent = () => {
-    // function loginHandler() {
-    //     console.log("buton");
-    //     console.log(this.state.users);
-    //   }
+    
     const url = "http://localhost:9000/users"
 
 
